@@ -38,6 +38,7 @@ Thumbs.db
 # ======================
 # Editor / IDE
 # ======================
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
