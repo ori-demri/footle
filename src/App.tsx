@@ -1,8 +1,10 @@
-import { env } from '@/env';
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import { useState } from "react";
+
+import { env } from "@/env";
+
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,13 +15,13 @@ function App() {
         <a href="https.vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
@@ -33,7 +35,6 @@ function App() {
       <div className="environment-variables">
         <h2>Environment Variables</h2>
         <p>VITE_API_URL: {env.VITE_API_URL}</p>
-        <p>VITE_ENABLE_FEATURE_X: {String(env.VITE_ENABLE_FEATURE_X)}</p>
       </div>
     </>
   );
